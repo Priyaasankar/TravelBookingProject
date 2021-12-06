@@ -22,4 +22,10 @@ public void clickbutton(String login)
 {
 driver.findElement(By.cssSelector(login)).click();
 }
+
+public void logout() {
+	driver.findElement(By.cssSelector("a[href='https://www.phptravels.net/account/logout'][class=' waves-effect']")).click();
+	//driver.findElement(By.xpath("/html/body/div[1]/div/div[3]/ul/li[5]/a")).click();
+	
+}
 }
