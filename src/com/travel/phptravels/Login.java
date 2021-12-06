@@ -23,7 +23,7 @@ public class Login {
         lm.clickbutton("button[class='btn btn-default btn-lg btn-block effect ladda-button waves-effect']");
         lm.logout();
        // lm.logout("a[href='https://www.phptravels.net/account/logout'][class='dropdown-item waves-effect']");
-          
+        driver.close();  
         
 }
 
