@@ -11,6 +11,7 @@ public class Login {
 	{
 		 String email;
 		 String password;
+		 String login;
 		String browsertype="chrome";
 		String url="https://www.phptravels.net/";	
 		WebDriver driver=com.travel.utilities.BookingUtility.Calldriver(browsertype);
@@ -19,7 +20,8 @@ public class Login {
         LoginModel lm=new LoginModel(driver);
         lm.setEmail("user@phptravels.com");
         lm.setPassword("demouser");
-        lm.clickbutton();
+        lm.clickbutton("button[class='btn btn-default btn-lg btn-block effect ladda-button waves-effect']");
+      
         
      
       

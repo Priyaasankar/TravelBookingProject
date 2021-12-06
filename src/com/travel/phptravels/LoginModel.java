@@ -18,8 +18,8 @@ public class LoginModel {
 		driver.findElement(By.name("password")).sendKeys(password);;
 	}
 
-public void clickbutton() 
+public void clickbutton(String login) 
 {
-driver.findElement(By.cssSelector("button[class='btn btn-default btn-lg btn-block effect ladda-button waves-effect']"))	.click();
+driver.findElement(By.cssSelector(login)).click();
 }
 }
